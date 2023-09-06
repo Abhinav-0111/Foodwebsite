@@ -1,0 +1,1457 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&family=Mulish:wght@300&family=Poppins:ital,wght@0,100;0,300;0,500;0,600;1,100;1,300;1,500&family=Roboto:ital,wght@0,300;0,400;1,100&family=Rubik:wght@300&family=Slabo+27px&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(90deg, #f94626, #f02328);
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+header nav {
+    width: 63%;
+    height: 13%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    width: 130px;
+    height: 70px;
+    transition: all .3s ease;
+}
+
+header nav .logo:hover {
+    scale: 1.1;
+}
+
+header nav .ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all .5s ease-in-out;
+
+}
+
+
+header nav ul li {
+    list-style-type: none;
+    padding: 5px 0px 5px 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+header .menu-icon {
+    color: white;
+    font-size: 35px;
+    transition: all .3s linear;
+    display: none;
+}
+
+header nav ul li a:hover {
+    color: #ffe91e;
+}
+
+header nav .user {
+    display: flex;
+    align-items: center;
+}
+
+header nav .user li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+header nav .user li a {
+    position: relative;
+    transition: all .3s ease;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+header nav .user li a:hover {
+    color: #ffe91e;
+}
+
+header nav .user li a img {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 30px;
+    padding: 3px 4px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+    transition: all .1s linear;
+}
+
+header nav .user li a:hover img {
+    filter: hue-rotate(300deg);
+}
+
+header nav .user li a h6 {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: black;
+    top: -20px;
+    right: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+header section {
+    width: 63%;
+    height: 87%;
+    margin: auto;
+    display: flex;
+}
+
+header section .left {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-weight: 900;
+}
+
+header section .left h1 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+
+header section .left p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 20px 0px;
+    color: rgb(240, 240, 240);
+}
+
+header section .left button {
+    padding: 8px 50px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    background: none;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s linear;
+    box-shadow: 0px 5px 12px rgb(0, 0, 0, 0.2);
+}
+
+header section .left button:hover {
+    box-shadow: inset 5px 5px 8px rgb(0, 0, 0, 0.4);
+}
+
+header section .left .dots {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+header section .left .dots h6 {
+    width: 15px;
+    height: 6px;
+    border-radius: 10px;
+    background: #fa9b93;
+    margin-right: 5px;
+    transition: all .3s ease-in-out;
+}
+
+header section .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section .right img {
+    position: absolute;
+}
+
+header .circle1 {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #f8381e;
+    top: 100px;
+    border-radius: 50%;
+    left: 15%;
+    z-index: -1;
+}
+
+header .ring1 {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: none;
+    border: 20px solid #fa5731;
+    top: -55px;
+    border-radius: 50%;
+    left: 45%;
+    z-index: -1;
+}
+
+header .ring2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: none;
+    border: 30px solid #fa5731;
+    bottom: -35px;
+    border-radius: 50%;
+    left: -3%;
+    z-index: -1;
+}
+
+header .ring3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: none;
+    border: 70px solid #e5100d;
+    right: -12%;
+    border-radius: 50%;
+    top: -23%;
+    z-index: -1;
+}
+
+header .red-box {
+    position: absolute;
+    width: 500px;
+    height: 850px;
+    background: linear-gradient(0deg, #d91313, #f82724);
+    left: 68%;
+    border-radius: 70px;
+    top: -200px;
+    transform: rotate(50deg);
+    z-index: -1;
+}
+
+.menu {
+    position: relative;
+    width: 65%;
+    height: 148.5px;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.menu .menu-sec {
+    width: 92%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.menu .menu-sec::-webkit-scrollbar {
+    display: none;
+}
+
+
+.menu .menu-sec .card {
+    height: 92%;
+    min-width: 132px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #282727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.menu .menu-sec .card:hover {
+    scale: 1.1;
+}
+
+.menu .menu-sec .card img {
+    width: 100%;
+}
+
+.menu .menu-sec .border {
+    position: absolute;
+    bottom: 0;
+    left: 31.2%;
+    background: #f02328;
+    width: 120px;
+    height: 7px;
+    border-radius: 30px;
+}
+
+.menu #left-arrow,
+#right-arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    left: 0%;
+    top: 35%;
+    cursor: pointer;
+}
+
+.menu #right-arrow {
+    left: 95%;
+    transform: rotate(180deg);
+}
+
+.menu>h4 {
+    position: absolute;
+    top: -15%;
+    left: 45%;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background: #ffc41e;
+    padding: 5px 25px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px #fc826f;
+    cursor: pointer;
+    transition: all .3s linear;
+    z-index: 99999999;
+}
+
+.menu>h4:hover {
+    background: #f53728;
+    box-shadow: none;
+}
+
+/* card-box start */
+
+.card-box {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(0deg, #f2dfd1, rgb(243, 210, 183));
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.card-box::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 60px solid rgb(105, 105, 105, 0.1);
+    border-radius: 50%;
+    top: -10px;
+    left: -90px;
+    z-index: -1;
+}
+
+.card-box::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgb(105, 105, 105, 0.1);
+    border-radius: 50%;
+    top: -15%;
+    right: -7%;
+    z-index: -1;
+}
+
+.card-box .card-box1 {
+    width: 65%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-box .card-box1 .card {
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 12px #ffdfbd;
+    background: white;
+    color: #282727;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.card-box .card-box1 .card:hover {
+    scale: 1.1;
+}
+
+
+.card-box .card-box1 .card-b {
+    width: 485px;
+}
+
+
+.card-box .card-box1 .card img {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+.card-box .card-box1 .card2 {
+    background: #fc2e46;
+}
+
+.card-box .card-box1 .card3 {
+    background: #fbfbfb;
+}
+
+.card-box .card-box1 .card-b img {
+    width: 55%;
+}
+
+.card-box .card-box1 .card .content {
+    z-index: 2;
+    padding: 15px 0px 15px 20px;
+}
+
+.card-box .card-box1 .card .content h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 29px;
+    line-height: 35px;
+}
+
+.card-box .card-box1 .card .content p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3f3f3f;
+    margin: 7px 0px;
+}
+
+.card-box .card-box1 .card .content h4 {
+    text-transform: uppercase;
+    color: #f02328;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-box .card-box1 .card .content .dots {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card-box .card-box1 .card .content .dots h2 {
+    width: 15px;
+    height: 6px;
+    background: #ffecb2;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.card-box .card-box1 .card .content .dots h2:nth-child(2) {
+    width: 20px;
+    height: 8px;
+    background: #ffc100;
+}
+
+.card-box .card-box1 .card2 .content {
+    color: white;
+}
+
+.card-box .card-box1 .card2 .content p {
+    color: white;
+}
+
+.card-box .card-box1 .card2 .content h4 {
+    color: white;
+}
+
+.card-box .card-box1 .card2 .content h4 {
+    color: white;
+}
+
+.card-box .card-box1 .card2 .content .dots h2:nth-child(2) {
+    background: #fb808b;
+    width: 15px;
+    height: 6px;
+}
+
+.card-box .card-box1 .card2 .content .dots h2 {
+    background: #fb808b;
+}
+
+
+.card-box .card-box1 .card2 .content .dots h2:nth-child(1) {
+    width: 20px;
+    height: 8px;
+    background: #fdd4d8;
+}
+
+.card-box .card-box1 .card3 .content h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 63px;
+}
+
+.card-box .card-box1 .card3 .content .dots h2:nth-child(1) {
+    width: 20px;
+    height: 8px;
+    background: #ffc100;
+}
+
+.card-box .card-box1 .card3 .content .dots h2:nth-child(2) {
+    background: #ffecb2;
+    width: 15px;
+    height: 6px;
+}
+
+.card-box .card-box1 .card-b .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.card-box .card-box1 .card-b .content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #f42c32;
+    color: white;
+    font-size: 13px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: all .3s linear;
+}
+
+.card-box .card-box1 .card-b .content a:hover {
+    background: #fb808b;
+}
+
+
+.card-box .card-box1 .card-b .content h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+/* app-box start */
+
+.app-box {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(0deg, rgb(243, 210, 183), #f2dfd1);
+    z-index: 2;
+}
+
+.app-box::before {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: rgb(230, 230, 230, 0.2);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 22%;
+    transform: skewX(45deg);
+    z-index: 1;
+}
+
+.app-box::after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: url("./img/cir1.png");
+    z-index: 1;
+    bottom: -118px;
+    left: 13%;
+}
+
+
+.app-box1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ffb536;
+    display: flex;
+    justify-content: center;
+}
+
+.app-box .app-box1::after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: url("./img/cir2.png");
+    z-index: 1;
+    top: -68px;
+    right: 12%;
+}
+
+
+.app-box .app-box1 .app-content,
+.app-img {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.app-box .app-box1 .app-img img {
+    position: relative;
+    height: 120%;
+    top: -25px;
+    filter: drop-shadow(-5px 0px 5px rgb(48, 48, 48, 0.4));
+}
+
+
+.app-box .app-box1 .app-content {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.app-box .app-box1 .app-content h1 {
+    color: white;
+    line-height: 30px;
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+.app-box .app-box1 .app-content .app-logo {
+    margin-top: 20px;
+}
+
+.app-box .app-box1 .app-content .app-logo img {
+    width: 150px;
+    filter: drop-shadow(2px 5px 4px rgb(48, 48, 48, 0.4));
+    transition: all .3s linear;
+}
+
+.app-box .app-box1 .app-content .app-logo img:hover {
+    scale: 1.1;
+}
+
+/* social-box start */
+
+.social {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: linear-gradient(0deg, #f2dfd1, rgb(243, 210, 183));
+    overflow: hidden;
+}
+
+.social::before {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, rgb(0, 0, 0, .1), #f2ddce);
+    border-radius: 50%;
+    bottom: 0;
+    left: -50px;
+}
+
+.social::after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    border: 40px solid rgb(0, 0, 0, .1);
+    border-radius: 50%;
+    top: -35%;
+    right: -8%;
+}
+
+.social .social1 {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.social .social1 .social-box,
+.social-videobox {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social .social1 .social-box::before {
+    position: absolute;
+    content: "SOCIAL";
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 40px;
+    top: -45px;
+}
+
+.social .social1 .social-videobox::before {
+    position: absolute;
+    content: "VIDEO";
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 40px;
+    top: -45px;
+}
+
+.social .social1 .social-box .twitter {
+    position: relative;
+    width: 295px;
+    height: 80px;
+    background: white;
+    border-radius: 20px 10px 10px 10px;
+    padding-left: 50px;
+
+}
+
+.social .social1 .social-box .twitter img {
+    position: absolute;
+    width: 35px;
+    padding: 8px;
+    background: #21b6fc;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px #d0edfa, 8px 0px 8px #d0edfa;
+    left: 0;
+}
+
+
+.social .social1 .social-box .twitter h3 {
+    font-size: 15px;
+    padding: 10px 0px 5px 0px;
+}
+
+
+.social .social1 .social-box .twitter p {
+    font-size: 11px;
+    padding-right: 15px;
+    color: #3f3f3f;
+}
+
+.social .social1 .social-box .twitter p span {
+    color: #21b6fc;
+}
+
+
+.social .social1 .social-box .facebook {
+    position: relative;
+    width: 195px;
+    height: 170px;
+    background: white;
+    border-radius: 20px 10px 10px 10px;
+    box-shadow: 0px 7px 12px #ffdfbd;
+}
+
+.social .social1 .social-box .facebook img {
+    position: absolute;
+    width: 35px;
+    padding: 8px;
+    background: #2e86de;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px #bedcfb, 8px 0px 8px #bedcfb;
+    left: 0;
+}
+
+.social .social1 .social-box .facebook .insta {
+    background: #ee5353;
+    box-shadow: 0px 0px 8px #fccccc, 8px 0px 8px #fccccc;
+    left: 0;
+}
+
+.social .social1 .social-box .facebook h3 {
+    font-size: 14px;
+    padding: 10px 0px 10px 50px;
+}
+
+.social .social1 .social-box .facebook p {
+    font-size: 11px;
+    padding: 10px 10px 10px 25px;
+    color: #3f3f3f;
+}
+
+.social .social1 .social-box .facebook p span {
+    color: #21b6fc;
+}
+
+
+.social .social1 .social-box .facebook .insta-box {
+    width: 120px;
+    height: 110px;
+    border-radius: 0;
+    background: none;
+    padding: 0%;
+    box-shadow: unset;
+    margin: 50px 10px 0px 38px;
+}
+
+.social .social1 .social-box .facebook .chicken-box {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    bottom: 10px;
+    left: 38px;
+    background: rgb(185, 185, 185, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.social .social1 .social-box .facebook .chicken-box h6 {
+    color: white;
+    text-align: center;
+    padding: 4px 0px;
+    line-height: 12px;
+}
+
+.social .social1 .social-box .facebook .chicken-box h6 span {
+    color: #ffb536;
+}
+
+.social .social1 .social-box .social-dots {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social .social1 .social-box .social-dots h2 {
+    width: 15px;
+    height: 6px;
+    border-radius: 10px;
+    background: #ffe18e;
+    margin-right: 5px;
+}
+
+.social .social1 .social-box .social-dots h2:nth-child(1) {
+    width: 20px;
+    height: 10px;
+    background: #ffd24a;
+}
+
+.social .social1 .social-videobox .video-box {
+    position: relative;
+    width: 500px;
+    height: 265px;
+    border: 8px solid white;
+    margin-left: 10px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social .social1 .social-videobox .video-box .screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.social .social1 .social-videobox .video-box .play {
+    position: absolute;
+    cursor: pointer;
+}
+
+.social .social1 .social-videobox .video-box .pause {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+address {
+    width: 100%;
+    height: 60px;
+    background: #f02328;
+}
+
+address .add {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+
+address .add .kfc-add,
+.kfc-icon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+address .add .kfc-add .add-logo {
+    width: 120px;
+    height: 50px;
+}
+
+address .add .kfc-add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+address .add .kfc-add .phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8px;
+    color: white;
+}
+
+address .add .kfc-add .phone img {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+address .add .kfc-icon {
+    justify-content: flex-end;
+}
+
+address .add .kfc-icon a {
+    width: 35px;
+    height: 35px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: all .5s ease-in-out;
+}
+
+
+address .add .kfc-icon a:hover {
+    transform: rotate(360deg);
+}
+
+address .add .kfc-icon a img {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #3f3f3f;
+    z-index: 2;
+}
+
+footer::before {
+    position: absolute;
+    content: "";
+    width: 270px;
+    height: 200px;
+    background: url("./img/kfc_brand.png");
+    right: 10%;
+    bottom: 0;
+    z-index: -1;
+}
+
+footer .links {
+    width: 80%;
+    height: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+footer .links .card-font {
+    width: 170px;
+    height: 93%;
+}
+
+footer .links .card-font:nth-child(2) {
+    padding-top: 40px;
+}
+
+footer .links .card-font li {
+    list-style-type: none;
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+footer .links .card-font li:nth-child(1) {
+    padding: 15px 0px 15px 0px;
+}
+
+footer .links .card-font li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    transition: all .3s ease-in-out;
+}
+
+footer .links .card-font li a:hover {
+    color: white;
+}
+
+footer .foot1 {
+    width: 80%;
+    margin: auto;
+    font-size: 11px;
+    color: gray;
+}
+
+footer .foot1 span:nth-child(1) {
+    margin-right: 50px;
+}
+
+
+header section .left .dots .head-dots-main {
+    width: 20px;
+    height: 8px;
+    background: white;
+}
+
+@media (max-width:1507px) {
+    header nav {
+        width: 80%;
+    }
+
+    header section {
+        width: 80%;
+    }
+
+    header .menu {
+        width: 80%;
+    }
+
+    .card-box .card-box1 {
+        width: 80%;
+    }
+
+    .card-box .card-box1 .card {
+        width: 32%;
+    }
+
+    .card-box .card-box1 .card-b {
+        width: 48%;
+    }
+
+    .social {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .social .social1 .social-box .twitter {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .social .social1 .social-box .facebook {
+        width: 100%;
+        height: 100px;
+        margin: 5px 0;
+    }
+
+    .social .social1 .social-box .facebook:nth-last-child(4) {
+        height: 170px;
+    }
+
+}
+
+@media (max-width:869px) {
+    .menu .menu-sec .border {
+        left: 5.2%;
+    }
+
+    .app-box .app-box1 .app-content h1 {
+        font-size: 17px;
+    }
+
+    .app-box .app-box1 .app-content .app-logo img {
+        width: 113px;
+    }
+
+    address .add .kfc-add,
+    .kfc-icon {
+        width: 70%;
+    }
+
+    address .add .kfc-icon {
+        width: 30%;
+    }
+
+    .social .social1 .social-videobox .video-box {
+        height: 190px;
+    }
+
+    .card-box .card-box1 .card {
+        width: 49%;
+        margin: 5px 0;
+    }
+
+    .card-box .card-box1 .card:nth-child(5) {
+        width: 100%;
+    }
+
+    .card-box {
+        height: auto;
+        padding: 30px 0px;
+    }
+
+    .app-box .app-box1 .app-content,
+    .app-img {
+        width: 91%;
+    }
+}
+
+@media (max-width:804px) {
+    header section .left p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:804px) {
+    header section .right {
+        height: 80%;
+    }
+
+    .menu .menu-sec {
+        width: 74%;
+    }
+
+    .menu .menu-sec .border {
+        left: 14.2%;
+    }
+
+    address .add {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width:680px) {
+    header {
+        height: 100vh;
+    }
+
+    header section {
+        flex-wrap: wrap-reverse;
+    }
+
+    header section .left {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    header section .right {
+        height: 41%;
+    }
+
+    header section .right {
+        width: 117%;
+    }
+
+    header section .left h1 {
+        margin-top: -29px;
+    }
+
+    element.style {
+        width: 100%;
+    }
+
+    .menu {
+        width: 90%;
+    }
+
+    element.style {
+        width: 70%;
+        height: 282px;
+    }
+
+    .app-box .app-box1 .app-img img {
+        top: -16px;
+    }
+
+    .social .social1 .social-box .twitter {
+        height: 94px;
+    }
+
+    header nav ul {
+        position: absolute;
+        width: 315px;
+        height: 20px;
+        right: -150%;
+        top: 70px;
+        z-index: 999999s;
+    }
+
+    .right>img {
+        width: 100%;
+    }
+
+    header nav .user li a img:nth-last-child(2) {
+        display: none;
+    }
+
+    header .menu-icon {
+        display: flex;
+    }
+
+    header .menu-icon .bi:nth-child(2) {
+        display: none;
+    }
+
+    header nav .user li a h6 {
+        opacity: 0;
+    }
+
+    .menu-ul-list {
+        right: 10%;
+    }
+
+    .card-box .card-box1 .card {
+        width: 80%;
+    }
+
+    .card-box .card-box1 {
+        justify-content: center;
+    }
+
+    header .humburger .bi:nth-child(1) {
+        display: none;
+    }
+
+    header .humburger .bi:nth-child(2) {
+        display: flex;
+    }
+
+    .card-box .card-box1 .card:nth-child(5) {
+        width: 80%;
+    }
+
+    .app-box {
+        height: auto;
+    }
+
+    .app-box::before {
+        height: 100%;
+        transform: skewX(15deg);
+    }
+
+    .app-box1 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .app-box .app-box1 .app-content,
+    .app-img {
+        width: 100%;
+    }
+
+    .app-box .app-box1 .app-content,
+    .app-img {
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    .app-box .app-box1 .app-content,
+    .app-img {
+        height: 50%;
+    }
+
+    .social .social1 {
+        flex-wrap: wrap;
+    }
+
+    .social .social1 .social-box,
+    .social-videobox {
+        width: 100%;
+    }
+
+    .social .social1 .social-videobox .video-box {
+        height: 226px;
+    }
+
+    address {
+        height: 120px;
+    }
+
+    address .add {
+        flex-wrap: wrap;
+    }
+
+    address .add {
+        width: 100%;
+        height: 50%;
+    }
+
+    address .add .kfc-icon {
+        width: 95%;
+    }
+}
+
+@media (max-width:400px) {
+    .card-box .card-box1 .card {
+        width: 100%;
+    }
+
+    .card-box .card-box1 .card:nth-child(5) {
+        width: 100%;
+    }
+
+    .app-box::before {
+        transform: skewX(0deg);
+    }
+
+    address .add .kfc-add .phone {
+        font-size: 11px;
+    }
+
+    address .add .kfc-add {
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (max-width:420px) {
+    .menu {
+        width: 71%;
+    }
+
+    address .add .kfc-add {
+        justify-content: space-evenly;
+    }
+
+    header nav .user li {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:830px) {
+    header section .right {
+        height: 84%;
+    }
+
+    header {
+        height: 50vh;
+    }
+}
+
+@media (max-width:380px) {
+    header section .left h1 {
+        font-size: 20px;
+        line-height: 24px;
+
+    }
+
+    header section .left p {
+        font-size: 12px;
+        margin: 6px 0px;
+    }
+
+    header section .left button {
+        padding: 3px 18px;
+
+    }
+
+    header section .right {
+        height: 73%;
+    }
+
+    .right>img {
+        width: 73%;
+        right: -35px;
+        top: 50px;
+    }
+
+    header section .left h1 {
+        margin-top: -93px;
+    }
+
+    header section .left .dots {
+        margin-top: 30px;
+    }
+
+    .menu>h4 {
+        left: 35%;
+    }
+}
+
+@media (max-width:420px) {
+    header section .right {
+        height: 50%;
+    }
+
+    header section .left h1 {
+        font-size: 29px;
+        line-height: 29px;
+
+    }
+
+    header section .left p {
+        font-weight: 400;
+        margin: 6px 0px;
+    }
+
+    header section .left button {
+        padding: 5px 36px;
+    }
+
+    header section .left .dots {
+        margin-top: 22px;
+    }
+
+    .menu>h4 {
+        left: 35%;
+    }
+}
